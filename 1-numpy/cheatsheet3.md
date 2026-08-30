@@ -58,7 +58,7 @@ print(np.sort(mat))         # by row
 ```
 
 
-### 3. Filter
+### 3. Filtering
 - For filtering we always use masking.
 - It returns True and False.
 
