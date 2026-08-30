@@ -68,11 +68,9 @@ print(vec[mask])
 
 # MATRIX
 mat = np.array([
-    [
         [5, 6, 10],
         [4, 98, 12],
         [56, 3, 22]
-    ]
 ])
 mask = mat > 10
 print(mat[mask])
