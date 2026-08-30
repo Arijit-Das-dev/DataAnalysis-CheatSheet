@@ -1,4 +1,4 @@
-## Array Manupulation
+# Array Manupulation
 
 ### 1. Slicing
 

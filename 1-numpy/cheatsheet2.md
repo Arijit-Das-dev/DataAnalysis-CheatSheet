@@ -1,4 +1,5 @@
-## Explore arrays/matrices/tensors
+# Explore arrays/matrices/tensors
+
 ```python
 import numpy as np
 matrix = np.array(
