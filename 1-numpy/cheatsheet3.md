@@ -22,6 +22,7 @@ mat = np.array([
     [1,  2,  3],  # r - 0
     [4,  5,  6],  # r - 1
     [7,  8,  9]   # r - 2
+
 ])
 
 # specific element
@@ -44,13 +45,39 @@ print(np.sort(vec))
 # MATRIX - (axis= 0, 1)
 # 0 - columns, 1 - row
 mat = np.array([
+        [5, 6, 10],
+        [4, 98, 12],
+        [56, 3, 22]
+])
+print(np.sort(mat, axis=0)) # by column
+print(np.sort(mat, axis=1)) # by row
+print(np.sort(mat))         # by row
+```
+
+
+### 3. Filter
+- For filtering we always use masking.
+- It returns True and False.
+
+```python
+# VECTOR
+vec = np.array([5, 12, 34, 9, 100, 87])
+mask = vec > 10
+print(vec[mask])
+
+
+# MATRIX
+mat = np.array([
     [
         [5, 6, 10],
         [4, 98, 12],
         [56, 3, 22]
     ]
 ])
-print(np.sort(mat, axis=0)) # by column
-print(np.sort(mat, axis=1)) # by row
-print(np.sort(mat))         # by row
+mask = mat > 10
+print(mat[mask])
+
+# we can use np.where() function also for filtering
+mask = np.where(vec>10)
+mask = np.where(mat>10)
 ```
