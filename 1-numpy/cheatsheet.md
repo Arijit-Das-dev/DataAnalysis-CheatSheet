@@ -4,3 +4,7 @@
 - It allocates data 1 dimensional , 2 dimensional and 3 dimensionally.
 ---
 
+## INSTALLATION
+```
+pip install numpy
+```
