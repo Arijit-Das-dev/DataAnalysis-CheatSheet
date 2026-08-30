@@ -1,7 +1,5 @@
 # NUMPY - Numerical Python
-> Used in Data Analysis, Machine Learning, Data Science and heavy mathematical calculations.
-> It stores data in **VECTORS**, **MATRICES** and **TENSORS**.
-> It allocates data 1 dimensional , 2 dimensional and 3 dimensionally.
+> Numpy is a **Python** library which is heavily used in scintific computations, core-mathematical calculations. Numpy used in many domains like 
 ---
 
 ## INSTALLATION
