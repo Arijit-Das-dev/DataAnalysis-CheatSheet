@@ -6,5 +6,9 @@
 
 ## INSTALLATION
 ```
+# method 1
 pip install numpy
+
+# method 2
+uv pip install numpy
 ```
