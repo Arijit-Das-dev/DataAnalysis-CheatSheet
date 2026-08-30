@@ -15,4 +15,23 @@ uv pip install numpy
 ```python
 # import numpy
 import numpy as np
+
+# create array/vector - 1D
+vector = np.array([1, 2, 3, 4])
+
+# create matrix - 2D
+matrix = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+])
+
+# create tensor
+tensor = np.array([
+    [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]
+])
 ```
