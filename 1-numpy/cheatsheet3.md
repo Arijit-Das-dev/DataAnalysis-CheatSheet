@@ -10,7 +10,6 @@ print(vec[0])
 print(vec[2])
 
 # indexing
-
 ```
 
 ```python
