@@ -1,6 +1,6 @@
 ## Array Operations
 
-### Slicing
+### 1. Slicing
 ```python
 # VECTORS
 vec = np.array([1, 2, 3, 4, 5, 6])
@@ -10,6 +10,8 @@ print(vec[0])
 print(vec[2])
 
 # indexing
+print(vec[0:2]) # [1, 2]
+print(vec[0:3]) # [1, 2, 3]
 ```
 
 ```python
