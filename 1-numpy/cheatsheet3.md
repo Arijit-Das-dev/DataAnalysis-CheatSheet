@@ -1,6 +1,7 @@
-## Array Operations
+## Array Manupulation
 
 ### 1. Slicing
+
 ```python
 # VECTORS
 vec = np.array([1, 2, 3, 4, 5, 6])
@@ -36,6 +37,8 @@ print(mat[0:3, 1:2]) # [2,  5,  8]
 
 
 ### 2. Sorting
+- Sort all values in ascending or discending order.
+
 ```python
 # VECTOR
 vec = [5, 12, 34, 9, 100, 87]
@@ -92,8 +95,8 @@ mat1 = np.array([
 ])
 
 mat2 = np.array([
-    [1,  2,  3]
-    [4,  5,  6]
+    [1,  2,  3],
+    [4,  5,  6],
     [7,  8,  9]
 ])
 print(np.concatenate((mat1, mat2), axis=1))
@@ -102,4 +105,37 @@ print(np.concatenate((mat1, mat2), acis=0))
 
 print(np.vstack((mat1, mat2)))
 print(np.hstack((mat1, mat2)))
+```
+
+
+### 5. Deleting
+- Deleting rows and columns.
+- For deleting rows and columns, we consider axis,
+- 0 = rows
+- 1 = columns
+
+```python
+mat = np.array([
+    [1,  2,  3],
+    [4,  5,  6],
+    [7,  8,  9]
+])
+
+deleted_row = np.delete(mat, 2, axis=0) # [7,  8,  9] (row)
+deleted_col = np.delete(mat, 2, axis=1) # [3,  6,  9] (columns)
+```
+
+
+### 6. Inserting
+- Inserting new row or column.
+
+```python
+mat = np.array([
+    [1,  2,  3],
+    [4,  5,  6],
+    [7,  8,  9]
+])
+
+inserted_row = np.insert(mat, 2, [23, 43, 12], axis=0)
+inserted_col = np.insert(mat, 2, [1, 4, 5], axis=1)
 ```
