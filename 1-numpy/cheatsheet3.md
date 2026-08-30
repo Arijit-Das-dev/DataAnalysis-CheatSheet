@@ -79,3 +79,27 @@ print(mat[mask])
 mask = np.where(vec>10)
 mask = np.where(mat>10)
 ```
+
+
+### 4. Concatenation
+- Concatenation means combining multiple arrays into one.
+
+```python
+mat1 = np.array([
+        [5, 6, 10],
+        [4, 98, 12],
+        [56, 3, 22]
+])
+
+mat2 = np.array([
+    [1,  2,  3]
+    [4,  5,  6]
+    [7,  8,  9]
+])
+print(np.concatenate((mat1, mat2), axis=1))
+print(np.concatenate((mat1, mat2), acis=0))
+
+
+print(np.vstack((mat1, mat2)))
+print(np.hstack((mat1, mat2)))
+```
