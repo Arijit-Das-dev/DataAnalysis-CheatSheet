@@ -13,7 +13,18 @@ pip install pandas
 pip show pandas
 ```
 
-## Import
+## Basic Fundamentals
 ```python
+
+# create data frame
 import pandas as pd
+
+data = {
+    "name": ['A', 'B', 'C', 'D', 'E'],
+    "salary": [10000, 20000, 15000, 45000, 23000],
+    "age": [22, 21, 23, 24, 34]
+}
+
+df = pd.DataFrame(data)
+df
 ```
