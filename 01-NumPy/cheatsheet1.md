@@ -4,7 +4,7 @@
 
 
 ## INSTALLATION
-```
+```python
 # method 1
 pip install numpy
 

@@ -72,3 +72,12 @@ mat2 = np.array([
 addition1 = mat1 / mat2
 addition2 = np.divide(mat1, mat2)
 ```
+
+### Other 
+```python
+np.ceil()   # gives the maximum number of a decimal number
+np.floor()  # removes decimal places
+np.abs()    # gives the absolute values of a decimal number
+np.trunc()  # removes decimal places
+np.round()  # determines how many decimal places should e taken
+```
