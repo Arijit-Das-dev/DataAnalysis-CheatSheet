@@ -4,11 +4,16 @@
 - It allows you to work with DataFrames.
 - In pandas all the data stores in DataFrame format.
 
-### INSTALLATION
+## INSTALLATION
 ```python
 # to install
 pip install pandas
 
 # to check version
 pip show pandas
+```
+
+## Import
+```python
+import pandas as pd
 ```
