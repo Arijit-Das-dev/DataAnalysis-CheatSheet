@@ -40,5 +40,37 @@ df = pd.read_csv("data.csv")
 # read sql file
 df = pd.read_sql("data.sql")
 
-#
+# read html file
+df = pd.read_html("data.html")
+
+# read json file
+df= pd.read_json("data.json")
+```
+
+## How to save data ?
+```python
+
+# to sql file
+df = pd.read_xlsx("data.xlsx")
+df.to_xlsx("data.xlsx")
+
+
+# read csv file
+df = pd.read_csv("data.csv")
+df.to_cev("data.csv")
+
+
+# read sql file
+df = pd.read_sql("data.sql")
+df.to_sql("data.sql")
+
+
+# read html file
+df = pd.read_html("data.html")
+df.to_html("data.html")
+
+
+# read json file
+df = pd.read_json("data.json")
+df.to_json("data.json")
 ```
