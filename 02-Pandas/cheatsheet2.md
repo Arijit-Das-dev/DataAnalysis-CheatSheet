@@ -2,9 +2,7 @@
 - In pandas we explore dataset before analysing.
 
 ## Example :
-### Basic
 ```python
-
 df.info()       # shows how many rows and columns are present and the data type of each column
 df.describe()   # shows a summary statistics of a dataset
 df.head()       # shows first 5 rows
@@ -19,9 +17,13 @@ df.size         # shows how many data are present in that dataset
 df.dtypes       # shows the data type of each column
 ```
 
-### Intermediate
-```python
 
+```python
 df.isnull().sum()       # shows total null values
 df.duplicated().sum()   # shows total duplicate values
+```
+
+```python
+df.isnull().sum()*100 /df.shape[0]       # missing percentage
+df.duplicated().sum()*100 /df.shape[0]   # duplicate percentage
 ```
