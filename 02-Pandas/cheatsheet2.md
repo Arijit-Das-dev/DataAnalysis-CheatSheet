@@ -1,7 +1,8 @@
 # Explore Dataset
 - In pandas we explore dataset before analysing.
 
-# Example :
+## Example :
+### Basic
 ```python
 
 df.info()       # shows how many rows and columns are present and the data type of each column
@@ -16,4 +17,11 @@ df.shape[1]     # shows total columns
 df.ndim         # shows dimensions
 df.size         # shows how many data are present in that dataset
 df.dtypes       # shows the data type of each column
+```
+
+### Intermediate
+```python
+
+df.isnull().sum()       # shows total null values
+df.duplicated().sum()   # shows total duplicate values
 ```
