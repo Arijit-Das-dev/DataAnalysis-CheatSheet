@@ -5,7 +5,7 @@
 ```python
 
 df.info()       # shows how many rows and columns are present and the data type of each column
-df.describe()   # shows a statistical overview of a dataset
+df.describe()   # shows a summary statistics of a dataset
 df.head()       # shows first 5 rows
 df.tail()       # shows last 5 rows
 
