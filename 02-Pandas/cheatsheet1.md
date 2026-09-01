@@ -3,6 +3,8 @@
 - It is used for data pre-processing tasks such as data sourcing, loading, cleaning, standardizing and analysing.
 - It allows you to work with DataFrames.
 - In pandas all the data stores in DataFrame format.
+- Pandas is heavily used in many domains such as **Health Care**, **Finance**, **Neuroscience**, **statistics**, **Advertisin g & Web Analysis**.
+
 
 ## INSTALLATION
 ```python
