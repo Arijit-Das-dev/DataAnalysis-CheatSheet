@@ -29,4 +29,16 @@ data = {
 
 df = pd.DataFrame(data)
 df
+
+
+# read excel file 
+df = pd.read_xlsx("data.xlsx")
+
+# read csv file
+df = pd.read_csv("data.csv")
+
+# read sql file
+df = pd.read_sql("data.sql")
+
+#
 ```
