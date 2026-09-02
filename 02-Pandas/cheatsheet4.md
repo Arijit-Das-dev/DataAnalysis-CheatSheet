@@ -1,6 +1,7 @@
 # Column & row Transformation
 
-## 1. Add new column
+## Column Transformation
+### 1. Add new column
 ```python
 df['bonus'] = df['salary'] * 0.1
 
@@ -14,12 +15,12 @@ df.loc[(df['gender'] == 'Male'), 'new_gender'] = 'M'
 df['full_name'] = df['First_name'] + df['Last_name']
 ```
 
-## 2. Drop existing column
+### 2. Drop existing column
 ```python
 df.drop(columns=['column1', 'column2'])
 ```
 
-## 3. Edit columns
+### 3. Edit columns
 - Before analysing dataset via columns, we have to fix errors in columns.
 
 ```python
@@ -50,4 +51,37 @@ df.columns = (df.columns
              .str.replace(r'[^A-Za-z0-9_]', '')
 )
 ```
+---
 
+## Row transformation
+```python
+
+# check special characters
+mask_1 = df['column'].astype(str).str.contains(r'[^A-Za-z]')
+
+# check for numbers
+mask_2 = df['column'].astype(str).str.contains(r'[0-9]')
+
+# check for upper case letters
+mask_3 = df['column'].astype(str).str.contains(r'[A-Z]')
+
+# check for leading or trailing spaces
+mask_4 = df['column'] != df['column'].astype(str).str.strip()
+
+# check for new lines
+mask_5 = df['column'].astype(str).str.contains('\n')
+```
+
+```python
+# fix errors
+
+df['column'] = (
+    df['column'].astype(str)
+    .str.lower()
+    .str.strip()
+    .str.replace('\n', '')
+    .str.replace(r'[0-9]', '')
+    .str.replace(r'[A-Za-z ]', '')
+    .str.strip()
+)
+```
