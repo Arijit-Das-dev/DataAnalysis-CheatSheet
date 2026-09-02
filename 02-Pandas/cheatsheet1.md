@@ -4,7 +4,7 @@
 - It allows you to work with DataFrames.
 - In pandas all the data stores in DataFrame format.
 - Pandas is heavily used in many domains such as **Health Care**, **Finance**, **Neuroscience**, **statistics**, **Advertisin g & Web Analysis**.
-
+- Pandas contains one dimensional and two dimensional arrays.
 
 ## INSTALLATION
 ```python
