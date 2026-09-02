@@ -86,7 +86,8 @@
     </tr>
   </tbody>
 </table>
----
+
+<hr>
 
 ## Add new column
 ```
