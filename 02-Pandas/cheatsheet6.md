@@ -24,8 +24,9 @@ df2 = pd.DataFrame({
     'Discount': [10, 15, 5, 20, 12]
 })
 
-inner_join = pd.merge(df1, df2, on='ID', how='inner')
-left_join = pd.merge(df1, df2, on='ID', how='left')
-right_join = pd.merge(df1, df2, on='ID', how='right')
-outer_join = pd.merge(df1, df2, on='ID', how='outer')
+inner_join = pd.merge(left=df1, right=df2, on='ID', how='inner')
+left_join = pd.merge(left=df1, right=df2, on='ID', how='left')
+right_join = pd.merge(left=df1, right=df2, on='ID', how='right')
+outer_join = pd.merge(left=df1, right=df2, on='ID', how='outer')
 ```
+
