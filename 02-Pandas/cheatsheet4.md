@@ -54,6 +54,8 @@ df.columns = (df.columns
 ---
 
 ## Row transformation
+
+### 1. Edit rows
 ```python
 
 # check special characters
@@ -83,5 +85,15 @@ df['column'] = (
     .str.replace(r'[0-9]', '')
     .str.replace(r'[A-Za-z ]', '')
     .str.strip()
+)
+```
+
+### 2. Other fixes
+```python
+df['gender'] = df['gender'].replace(
+    {
+        "Female" : "F",
+        "Male" : "M"
+    }
 )
 ```
