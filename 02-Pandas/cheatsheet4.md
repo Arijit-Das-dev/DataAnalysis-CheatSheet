@@ -1,4 +1,4 @@
-# Column Transformation
+# Row & Column Transformation
 
 
 ## 1. Add new column
@@ -16,3 +16,6 @@ df['full_name'] = df['First_name'] + df['Last_name']
 ```
 
 ## 2. Drop existing column
+```python
+df.drop(columns=['column1', 'column2'])
+```
