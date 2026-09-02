@@ -6,7 +6,7 @@
     - ***RIGHT JOIN***
     - ***OUTER JOIN***
 
-## 1. Merge
+
 ```python
 import pandas as pd
 
@@ -23,10 +23,18 @@ df2 = pd.DataFrame({
     'Quantity': [2, 5, 3, 4, 6],
     'Discount': [10, 15, 5, 20, 12]
 })
+```
 
+## 1. Merge
+```python
 inner_join = pd.merge(left=df1, right=df2, on='ID', how='inner')
 left_join = pd.merge(left=df1, right=df2, on='ID', how='left')
 right_join = pd.merge(left=df1, right=df2, on='ID', how='right')
 outer_join = pd.merge(left=df1, right=df2, on='ID', how='outer')
 ```
 
+## 2. Concat
+```python
+pd.concat([df1, df2], axis=1) # joins row wise
+pd.concat([df1, df2], axis=0) # join column wise
+```
