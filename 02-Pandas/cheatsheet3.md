@@ -1,6 +1,6 @@
 # Handling Missing & Duplicate Values
 
-## Handling Missing Values
+## 1. Handling Missing Values
 - There are three data types of columns.
     - Numeric (integer)
     - object  (string)
@@ -8,13 +8,13 @@
 
 - If a column contains around 50 % Null values then identify why those rows contains null values. if there is no specific reason then you can simply drop that column.
 
-### Numeric type Column
+### A. Numeric type Column
 - For numeric columns -
-    - 1. Get total null values
-    - 2. If null percentage >= 50% , drop that column.
-    - 3. if percentage 20 - 30% , Check outlier
-    - 4. If outlier present - use median
-    - 5. If no outlier - use mean
+    - Get total null values
+    - If null percentage >= 50% , drop that column.
+    - if percentage 20 - 30% , Check outlier
+    - If outlier present - use median
+    - If no outlier - use mean
 
 ```python
 
@@ -47,7 +47,7 @@ else:
 df.drop(columns = [columns], inplace=True)
 ```
 
-### Object type columns
+### B. Object type columns
 - For object type column,
     - Get the percentage of null values
     - If null percentage >= 50 % , identify why it is missing.
