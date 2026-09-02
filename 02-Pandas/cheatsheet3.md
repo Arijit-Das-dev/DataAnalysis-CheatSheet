@@ -72,3 +72,19 @@ df[column].fillna('unknown', inplace=True)
 # option 3 - missing percentage ( > 50 % )
 df.drop(columns=[column], inplace=True)
 ```
+---
+
+## 2. Handling Duplicates
+- Identify the percentage of duplicate values.
+- If it is logically correct to have duplicate values in that specific column then keep it as it is or drop it.
+
+```python
+# drop all duplicates from entire dataset
+df.drop_duplicates(inplace=True)
+
+# or
+df = df.drop_duplicates()
+
+# drop duplicates from specific column
+df.drop_duplicates(subset=[column], inplace=True)
+```
