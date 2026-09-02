@@ -18,7 +18,17 @@ df.groupby('Department')['salary'].max()
 
 ```python
 # applying multiple aggregate functions at once
-df.groupby('region')['sales'].agg(['mean', 'min', 'max', 'sum'])
+df.groupby('region')['sales'].agg(
+    average = 'mean',
+    minimum = 'min',
+    maximum = 'max',
+    total = 'sum'
+)
 
-df.groupby('Department')['salary'].agg(['mean', 'min', 'max', 'sum'])
+df.groupby('Department')['salary'].agg(
+    average = 'mean',
+    minimum = 'min',
+    maximum = 'max',
+    total = 'sum'
+)
 ```
